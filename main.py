@@ -26,7 +26,7 @@ def get_answer():
     return jsonify(response.choices[0].text)
 
 
-app.run()
+#app.run()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
