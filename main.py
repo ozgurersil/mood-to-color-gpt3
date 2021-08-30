@@ -7,7 +7,7 @@ from flask import request, jsonify
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-@app.route('/', methods=['GET'])
+@app.route('/getColor', methods=['GET'])
 def get_answer():
     load_dotenv(find_dotenv())
     msg = request.args.get('msg')
